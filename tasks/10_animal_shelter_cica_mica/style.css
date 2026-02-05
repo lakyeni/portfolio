@@ -1,0 +1,216 @@
+/* LAYOUT */
+
+.container {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* FONTS */
+
+.zalando-sans {
+  font-family: "Zalando Sans", sans-serif;
+  font-weight: 300;
+}
+
+.sour-gummy  {
+  font-family: "Sour Gummy", sans-serif;
+  color: rgb(246, 240, 215);
+}
+
+/* HEADER */
+
+.header {
+    background-color: rgb(197,216,157);
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.sour-gummy h1  {
+    font-size: clamp(2.5rem, 8vw, 7rem);
+}
+
+/* MAING IMAGE */ 
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container > img {
+    width: 100%;
+}
+
+/* ABOUT */
+
+.about {
+    background-color: rgb(197, 216, 157);
+    padding: clamp(1rem,2vw,2rem);
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2rem;
+}
+
+.about p {
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+
+/* SUPPORT */ 
+
+.support {
+    background-color: rgb(156, 171, 132);
+    padding: clamp(1rem,2vw,2rem);
+    text-align: center;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.support.item {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.support img {
+    max-width: 20rem;
+    border-radius: 1rem;
+}
+
+.support h2 {
+    color: rgb(246, 240, 215);
+    font-size: 2rem;
+}
+
+.support p {
+    padding: 2rem;
+    font-size: 1.5rem;
+    color: rgb(246, 240, 215);
+}
+
+/* ADOPTATION */
+
+.adoptation {
+    background-color: rgb(197, 216, 157);
+    padding: clamp(1rem,2vw,2rem);
+}
+
+.adoptation h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.adoptation-boxes {
+    display: flex;
+    gap: 2rem;
+}
+
+.box {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.box-img {
+    max-width: 300px;
+    margin: 0 auto, 1rem;
+}
+
+.box h3 {
+    font-size: 3rem;
+    margin: 0.5rem 0; 
+}
+
+.box p {
+    font-size: 1.5rem;
+}
+
+/* BUTTON */
+
+.button {
+    background-color: rgb(246, 240, 215);
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: 0.7rem 1.2rem;
+    font-weight: bold;
+    color: rgb(137, 152, 109);
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+/* CONTACT */
+
+.contact {
+    background-color: rgb(156, 171, 132);
+    padding: clamp(1rem,2vw,2rem);
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2rem;
+}
+
+.contact p {
+    font-size: 1.5rem;
+}
+
+/* FOOTER */
+.footer {
+    background-color: rgb(197,216,157);
+    text-align: center;
+}
+
+/* MEDIA QUERRIES */ 
+
+@media (max-width: 768px) {
+
+    /* ADOPTATION MOBILE */
+    .adoptation-boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        max-width: 300px;
+    }
+
+    /* SUPPORT MOBILE */
+    .support .item {
+        flex-direction: column;
+    }
+
+    .support img {
+        max-width: 100%;
+    }
+
+    /* FONT SIZES MOBILE */
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    .box h3 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+
+    .header, .about, .support, .adoptation, .contact {
+        padding: 1.5rem;
+    }
+
+}

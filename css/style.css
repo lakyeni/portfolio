@@ -281,4 +281,21 @@ footer .social-links a:hover {
   100% { transform: scale(1); }
 }
 
+@media (max-width: 768px) {
+  .best-project-container {
+    gap: 20px;
+  }
+  .best-project {
+    width: 45%;
+  }
+}
+@media (max-width: 480px) {
+  .best-project-container {
+    gap: 10px;
+  }
+  .best-project {
+    width: 100%;
+  }
+}
+
 
